@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<!-- sdddddd `` -->
+
+<body>
+  <div class='w-full h-full bg-red-50 flex items-center justify-center'>
+    <div class=''>
+      <h1 class='text-center'>Login</h1>
+      <div style='margin-top: 5px;'>
+        <div>
+          <!-- <label for="#">Email</label> -->
+
+        </div>
+        <input id='input' type="text" placeholder='Email'>
+
+      </div>
+      <!-- <div>
+        <div style='margin-top: 5px;'>
+          <label for="#">Password</label>
+
+
+        </div>
+        <input type="password" placeholder='Email'>
+
+      </div> -->
+
+
+    </div>
+    <button id='btn'
+      style='padding: 12px 14px; background-color: teal; color: white; border: none; margin-top: 20px; cursor: pointer;'>Login</button>
+
+  </div>
+  <script>
+    const btnid = document.getElementById('btn');
+    const inputid = document.getElementById('input')
+    btnid.addEventListener('click', function () {
+      const rrr = inputid.value;
+      console.log('sdssdasas',value);
+      alert('hgdf')
+      localStorage.setItem('name', rrr)
+    })
+   
+  </script>
+
+</body>
+
+</html>
