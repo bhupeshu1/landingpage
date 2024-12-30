@@ -6,6 +6,11 @@ import CycleTwo from '../src/common/images/cycle2.png';
 import random from '../src/common/images/randomimg.png';
 import randomtwo from '../src/common/images/randomtwoimg.png';
 import randomthree from './common/images/randomthreeimg.png';
+import limeImgaes from './common/images/limeImage01.png';
+import EastIcon from '@mui/icons-material/East';
+import limeImage from './common/limeImageTwo.png';
+import reviseImage from './common/images/recentimage.png';
+import locationImage from './common/images/locatonImage.png'
 
 const App = () => {
   return (
@@ -90,6 +95,160 @@ const App = () => {
             </div>
           </div>
         </div>
+      </div>
+      {/*Locations  */}
+      <div className='mt-20 text-center'>
+        <p className='text-[#00B200] font-medium text-2xl'>Locations</p>
+        <p className='font-medium text-3xl p-2'>Our U.S. Cities </p>
+      </div>
+      {/* image div */}
+      <div className='w-full flex justify-center gap-6 flex-wrap mt-3'>
+        <div>
+          <div className='w-[400px] h-[300px] rounded-md overflow-hidden'>
+            <img
+              src='https://s3-alpha-sig.figma.com/img/f9f9/8f11/af3c710d12686591080a11f5140178f4?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dyoQ1RGR7NDMZVP4zKHPHBSvffZmS2teIhAjBT2Pag5NABWm2Kn0dyZC0dDwiyFqeyf~oUogJpPKbdICqmeIDrYXvIGX6Dm~qsr~63~OJ1HEZB6AbML3JbQz1dogzgV9PmM9o-M1BFTq2C44QWi7DAT4b~6Z4UuSbd-U7UCdzOlzAXVDurMVuvM~FGmcf6y3BXHQHY2wE0YtTOCGvdtGx8S2wSnqZAMIgiOHNCQCczh2sPKhfJpUe5D7bfFSW07hie0srK91rTNVV7JUDKip0N8YkWpo5GfJAVXG79fOv0XvJQnxbVel0KBnMJKZchJsCEEeSZKSeA2O2S--XaxYYw__'
+              alt=''
+            />
+          </div>
+          <p className='w-fit border-b-2 border-black pt-2'>
+            New York <EastIcon fontSize='medium' />
+          </p>
+        </div>
+        <div>
+          <div className='w-[400px] h-[300px] rounded-md overflow-hidden'>
+            <img
+              src='https://s3-alpha-sig.figma.com/img/c5e2/0da9/92688bd1303fcab0de4e21b4c44268c8?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iN584co0RBSRp0s30vKjg-TjBlgbHBbFCZyooefwRrmTaKFgrYO~STYMK-SOd5eDi07AJhBNSZ3owO~2Xevfptg-nTsvon-IGDO4JrMmyD81e9htVX4wcEGwchT2XBoTXZ04zN7YIGOhusZN2dRuAO-jmWWOnjV7AmrCK2Rf1Ci139B00HECyu7TjO8k6m-xT1P1Qyw64NK~hFdzGPQlOKUlgwvkl5JPEVlNtl3yvudX-~Hig0JWyuid3VmGIiYeB6pC6c1keQwYBnwFl3ZUDUAFmU2tm5Wn7iPcUZw1VZkFnrFGgy1-flvDsfa~xeO7jgMpQh2tdWW7jQvrFofaNQ__'
+              alt=''
+            />
+          </div>
+          <p className='w-fit border-b-2 border-black pt-2'>
+            San Francisco <EastIcon fontSize='medium' />
+          </p>
+        </div>
+        <div>
+          <div className='w-[400px] h-[300px] rounded-md overflow-hidden '>
+            <img
+              src='https://s3-alpha-sig.figma.com/img/f2c9/a0df/4384a6db7a4ab38f177f56a2cf12de5e?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WlqYOiGszCw7HfhCStGYRCW5gIiHOrRQRLa~cQr9uQmuXdEcK-A6QwkMxrkePMJloSSBpXeVNji8OU2Asv1RjVWxw8k4X6JYRdLYnZNNtheOX3b1BYEUTF4JVttvmp2g9dP~nxFfD46Ty3wg7tld1urHkkYuOn~wMC4X0Er-8WLArZLUkMi3zthArX4aFrUAZpc911RLvSPFCcg4vSgqaKBnt88EwsZ6ckc0Sw0fWc7xPGJsdhYd4JTc0TRs1G8qF4~ABBOHKw1psLfMY14jt5rX4HbBCcWESHwvVv7xSQs61Vb3gxz9bPG-4zLZSbnWYLaCfM8wAaRBXQIjYj~IDQ__'
+              alt=''
+            />
+          </div>
+
+          <p className='w-fit border-b-2 border-black pt-2'>
+            Washington, DC <EastIcon fontSize='medium' />
+          </p>
+        </div>
+      </div>
+      {/* Why Lime div */}
+      <div className='mb-10'>
+        <div className='mt-20 text-center'>
+          <p className='text-[#00B200] font-medium text-2xl'>Why Lime</p>
+          <p className='font-medium text-3xl p-2'>Our Core Principles </p>
+        </div>
+        <div className='w-full flex justify-center gap-6 flex-wrap mt-3'>
+          <div>
+            <div className='w-[400px] h-[300px] rounded-md overflow-hidden'>
+              <img
+                src='https://s3-alpha-sig.figma.com/img/7dd3/8912/13b0be14e1d4d09996c68fefc1b5af4b?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QMenXcBr-m61JDOf1TYqHeT5FfGmHvXZ727m~vkuruKFZX-KVSmmxRtHKOY6e9DGhiMUxZHvcSGRmRJMfmyBglUMHwVK3jBhRKp5Ev~h-owsLOV~ACZgkDqCoblt45-VZxLMblRZkgUY2yatxGwwB4lh~gvAB4nvIuXCNLbgmpMWHcu-T2sH9yxSSQHJJMMnC63O08fxqIMunpNtl91hwQIqZ2O3mtQB7e7P58X-ifF-Rz3EgjZoh7pPty3dyX8w3UkpYv3x7MWjpmLlIAMq4MFOkJpNDnCT2gIK2F3xQ~5FEe~jboK1VtmK3a4bEVBGKyvthLzSPtvmcR5S7wMmlQ__'
+                alt=''
+              />
+            </div>
+            <p className='w-fit border-b-2 border-black pt-2'>
+              Safety <EastIcon fontSize='medium' />
+            </p>
+          </div>
+          <div>
+            <div className='w-[400px] h-[300px] rounded-md overflow-hidden'>
+              <img
+                src='https://s3-alpha-sig.figma.com/img/c9db/63c4/3afa9b51725318b56916fd9832fbd4f1?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mgxaHiEfAXWbolS4g8kLN8G3y2Fx6~wHkAYMVmHhcWcJrEKywcT4twTUJ8ZczZyuuPEthOFy8uZ9Z-2p~gYmg1ZHZUMLkj5qGQ-Oi4~K2xqDdzeriyXlNelKjF20EfLtAskStjif2ahNV3YpVRiHgnL54rWsduwkXWadSfkpnWnPmNlap1obQMHbqIRqtXS~Nh9gyMFFod-1HQJTs7dytiyBdm2vKx6AVgnrlb~U6lA2le6XuelGP6Uagv6cHomaRyEkPgSEisLj8BxGa7d6Jd6O5~AN3YqxTOFok4XzwjXzAnyVUgGn~VRgSTOZYfpvjFlOhDeY9HBH-QJ9zcMv4g__'
+                alt=''
+              />
+            </div>
+            <p className='w-fit border-b-2 border-black pt-2'>
+              Sustainability <EastIcon fontSize='medium' />
+            </p>
+          </div>
+          <div>
+            <div className='w-[400px] h-[300px] rounded-md overflow-hidden '>
+              <img
+                src='https://s3-alpha-sig.figma.com/img/d983/42b4/af5b89f38e183499a191e2fc48aeed0e?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SeQYRxK~xbrOnNeY7IRAbw7PWWn-oOjL0oR5CHIcOFgMxBLStg8CmRTel0IbjZfFRvpHEX2KvKR9AReJUnELDPkcm7Jpc7Agt7eayxT~hFsY8iJCkwDBTYfQtp-VtQVaVIkuTMPAgDv5RqS5D7MjGfw6z9vQ1CeP2NL~x~bjI7spmKE7Fs4TduPauNCeyG2GoQfpaSqWUj3eR3tc3draCx256CTgDqJEVdqohPVL~p5MXthjolUbpJp~AWFNf2gzC1JYfJtIHTURTzXu9VuhLWEwzc6GCIvunGMRYWvIKZEAi3-bQCaM-NiLYTEVYevn0W9xjwP2DWVS9ZwXOLjAJw__'
+                alt=''
+              />
+            </div>
+
+            <p className='w-fit border-b-2 border-black pt-2'>
+              Community <EastIcon fontSize='medium' />
+            </p>
+          </div>
+        </div>
+      </div>
+      {/* lime div */}
+      <div className='bg-[#1E1E1E] w-full h-auto mt-10 pb-5'>
+        <div className='text-center pt-10'>
+          <p className='text-[#00B200] font-medium text-2xl'>Lime Times Blog</p>
+          <p className='font-medium text-3xl p-1 text-white'>
+            Our Latest News{' '}
+          </p>
+        </div>
+        <div className='w-full flex justify-center gap-6 flex-wrap mt-3'>
+          <div>
+            <div className='w-[400px] h-[300px] rounded-md overflow-hidden'>
+              {/* <img src={limeImgaes} alt='' /> */}
+              <img src={limeImage} alt='df' />
+            </div>
+            <p className='w-fit border-b-2 border-black pt-2 text-[#00DD00]'>
+              Sustainability
+            </p>
+            <p className='text-white w-[400px]'>
+              With Our Industry-Leading Net-Zero Target Validated Our Hard Work
+              Continues
+            </p>
+          </div>
+          <div>
+            <div className='w-[400px] h-[300px] rounded-md overflow-hidden'>
+              <img src={limeImage} alt='df' />
+            </div>
+            <p className='w-fit border-b-2 border-black pt-2 text-white'>
+              Hero of the Month: Respire
+            </p>
+          </div>
+          <div>
+            <div className='w-[400px] h-[300px] rounded-md overflow-hidden '>
+              <img src={limeImage} alt='df' />
+            </div>
+
+            <p className='w-fit border-b-2 border-black pt-2 text-white'>
+              Lime Recaps 2023 With Its Annual ​‘Ride Replay’
+            </p>
+          </div>
+        </div>
+        <div className='w-full flex justify-center gap-6 flex-wrap mt-3'>
+          <div className='w-[400px] h-auto text-white'>
+            by Andrew Savage | January 16, 2024
+          </div>
+          <div className='w-[400px] h-auto text-white'>
+            {' '}
+            January 10, 2024
+          </div>
+          <div className='w-[400px] h-auto text-white'>
+            December 13, 2023
+          </div>
+          
+        </div>
+        <div className='w-full flex justify-center items-center mt-10'>
+          <button className='bg-[#00DD00] text-black rounded-full p-4'>
+            View More
+          </button>
+        </div>
+        
+      </div>
+      {/* play store div */}
+      <div className='w-full h-auto bg-[#1A1A1A] flex items-center justify-center'>
+        <div> 
+          <img src={locationImage} alt="" />
+        </div>
+        <div></div>
+
+
       </div>
     </div>
   );
