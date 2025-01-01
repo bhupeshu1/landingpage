@@ -10,7 +10,9 @@ import limeImgaes from './common/images/limeImage01.png';
 import EastIcon from '@mui/icons-material/East';
 import limeImage from './common/limeImageTwo.png';
 import reviseImage from './common/images/recentimage.png';
-import locationImage from './common/images/locatonImage.png'
+import locationImage from './common/images/locatonImage.png';
+import playImage from './common/images/play.png';
+import Footer_logo from './common/images/limeFooter.png';
 
 const App = () => {
   return (
@@ -225,30 +227,80 @@ const App = () => {
           <div className='w-[400px] h-auto text-white'>
             by Andrew Savage | January 16, 2024
           </div>
-          <div className='w-[400px] h-auto text-white'>
-            {' '}
-            January 10, 2024
-          </div>
-          <div className='w-[400px] h-auto text-white'>
-            December 13, 2023
-          </div>
-          
+          <div className='w-[400px] h-auto text-white'> January 10, 2024</div>
+          <div className='w-[400px] h-auto text-white'>December 13, 2023</div>
         </div>
         <div className='w-full flex justify-center items-center mt-10'>
           <button className='bg-[#00DD00] text-black rounded-full p-4'>
             View More
           </button>
         </div>
-        
       </div>
       {/* play store div */}
-      <div className='w-full h-auto bg-[#1A1A1A] flex items-center justify-center'>
-        <div> 
-          <img src={locationImage} alt="" />
+      <div className='w-full h-auto bg-[#1A1A1A] flex items-center justify-between flex-wrap sm:px-40 px-10 sm:py-28'>
+        <div>
+          <img src={locationImage} alt='' className='max-w-[400px] h-[600px]' />
         </div>
-        <div></div>
-
-
+        <div>
+          <h1 className='text-white text-3xl font-medium'>Download the App</h1>
+          <div className='flex gap-8 mt-5'>
+            <img
+              className='h-[55px] w-[160px] cursor-pointer'
+              src={playImage}
+              alt=''
+            />
+            <img
+              className='h-[55px] w-[160px] cursor-pointer'
+              src='https://s3-alpha-sig.figma.com/img/cb81/26b3/2c2274e0394246b40bd0b7f9f847e44c?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ihH3X~j1EMv-cureRxS57GlsN2kqzMDu88qpN9bJZygvycElV3ceh3Zac28WuhDhKpi2uL1fVtbOQE8wwoYSWfwGvyo5vONTH5XBktR2A72kenmdRru0OvOdQoo0tYb9P2scXCFE5ZrUX7lxO98wkCuxa9UrRP8Zj--2aW4RhwZ~3ILQWV~c1s0JCtUjkUncn32kO0dEcUj7brUIs~WlYQ0y~JNeqAxN-j~0bxNMEbfVmLdQtJ7tZZyARndrNQxY05M09IU9nE4vKLrmi4EA~8b2THKpyfj0YhDuNoI14kxn2SzXZ513B7qJ7kBZGBwWidl-Rzl02BpxsF8-juVoFA__'
+              alt='imageHere'
+            />
+          </div>
+        </div>
+      </div>
+      {/* footer start */}
+      <div className='bg-[#000000] w-full h-auto flex flex-wrap gap-20 max-lg:bg-red-600'>
+        <div className='w-[20%]'>
+          <img
+            src={Footer_logo}
+            alt='footer_image_here'
+            className='w-[160px] h-[56px]'
+          />
+        </div>
+        <div className='w-[20%]'>
+          <h1 className='text-white font-normal leading-4'>Join Us</h1>
+          <div className='bg-teal-400'>
+            <li className='text-white list-none cursor-pointer'>Careers</li>
+            <li className='text-white list-none cursor-pointer'>
+              Lime Times Blog
+            </li>
+            <li className='text-white list-none cursor-pointer'>Press</li>
+            <li className='text-white list-none cursor-pointer'>Partners</li>
+          </div>
+          <div>
+            <li className='text-white list-none cursor-pointer'>Careers</li>
+            <li className='text-white list-none cursor-pointer'>
+              Lime Times Blog
+            </li>
+            <li className='text-white list-none cursor-pointer'>Press</li>
+            <li className='text-white list-none cursor-pointer'>Partners</li>
+          </div>
+          <div>
+            <li className='text-white list-none cursor-pointer'>Careers</li>
+            <li className='text-white list-none cursor-pointer'>
+              Lime Times Blog
+            </li>
+            <li className='text-white list-none cursor-pointer'>Press</li>
+            <li className='text-white list-none cursor-pointer'>Partners</li>
+          </div>
+          <div>
+            <li className='text-white list-none cursor-pointer'>Careers</li>
+            <li className='text-white list-none cursor-pointer'>
+              Lime Times Blog
+            </li>
+            <li className='text-white list-none cursor-pointer'>Press</li>
+            <li className='text-white list-none cursor-pointer'>Partners</li>
+          </div>
+        </div>
       </div>
     </div>
   );
