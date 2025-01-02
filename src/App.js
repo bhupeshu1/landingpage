@@ -51,11 +51,11 @@ const App = () => {
           </h1>
         </div>
         <div className='flex flex-wrap items-center justify-center gap-5 mt-14'>
-          <div className='bg-[#EEEEEE] min-w-[413px] max-w-full h-[423px] flex flex-col gap-5 max-md:flex-row items-center justify-center rounded-2xl'>
+          <div className='bg-[#EEEEEE] max-w-[413px] w-full h-[423px] flex flex-col gap-5 max-md:flex-row items-center justify-center rounded-2xl'>
             <img src={Cycle} alt='vehicle_image'></img>
             <h1>E-Scooter</h1>
           </div>
-          <div className='bg-[#EEEEEE] min-w-[413px] max-w-full h-[423px] flex flex-col gap-5 max-md:flex-row items-center justify-center rounded-2xl'>
+          <div className='bg-[#EEEEEE] max-w-[413px] w-full  h-[423px] flex flex-col gap-5 max-md:flex-row items-center justify-center rounded-2xl'>
             <img src={CycleTwo} alt='vehicle' />
             <h1>E-Bike</h1>
           </div>
@@ -68,14 +68,14 @@ const App = () => {
           <h1 className='font-normal text-4xl text-center'>How to Lime</h1>
         </div>
         <div className='flex gap-5 items-center justify-center mt-6 flex-wrap'>
-          <div className='min-w-[400px] h-[400px] max-w-[100%]  bg-gray-50 rounded-lg overflow-hidden'>
+          <div className='max-w-[400px] h-[400px] w-[100%]  bg-gray-50 rounded-lg overflow-hidden'>
             <img src={random} alt='box_img_one' />
             <div className='flex justify-between  px-5 py-6 max-md:px-2 max-md:py-2'>
               <h1 className='text-[#00B200] text-xl  font-normal'>Locate</h1>{' '}
               <p className='px-2'>Download the Lime app to find a vehicle.</p>
             </div>
           </div>
-          <div className='w-[400px] h-[400px] bg-gray-50 rounded-lg overflow-hidden'>
+          <div className='max-w-[400px] w-full h-[400px] bg-gray-50 rounded-lg overflow-hidden'>
             <img src={randomtwo} alt='random_two_img' />
             <div className='flex justify-between align-center px-5 py-5'>
               <h1 className='text-[#00B200] text-xl  font-normal'>Scan</h1>{' '}
@@ -86,7 +86,7 @@ const App = () => {
             </div>
           </div>
 
-          <div className='w-[400px] h-[400px] bg-gray-50 rounded-lg overflow-hidden'>
+          <div className='max-w-[400px] w-full h-[400px] bg-gray-50 rounded-lg overflow-hidden'>
             <img src={randomthree} alt='random_two_img' />
             <div className='flex justify-between  px-5 py-6'>
               <h1 className='text-[#00B200] text-xl  font-normal'>Ride</h1>{' '}
@@ -192,7 +192,7 @@ const App = () => {
           </p>
         </div>
         <div className='w-full flex justify-center gap-6 flex-wrap mt-3'>
-          <div>
+          <div className=''>
             <div className='w-[400px] h-[300px] rounded-md overflow-hidden'>
               {/* <img src={limeImgaes} alt='' /> */}
               <img src={limeImage} alt='df' />
@@ -205,8 +205,8 @@ const App = () => {
               Continues
             </p>
           </div>
-          <div>
-            <div className='w-[400px] h-[300px] rounded-md overflow-hidden'>
+          <div className=''>
+            <div className='w-[400px] h-[300px] rounded-md overflow-hidden '>
               <img src={limeImage} alt='df' />
             </div>
             <p className='w-fit border-b-2 border-black pt-2 text-white'>
@@ -239,7 +239,11 @@ const App = () => {
       {/* play store div */}
       <div className='w-full h-auto bg-[#1A1A1A] flex items-center justify-between flex-wrap sm:px-40 px-10 sm:py-28'>
         <div>
-          <img src={locationImage} alt='' className='max-w-[400px] h-[600px]' />
+          <img
+            src={locationImage}
+            alt=''
+            className='w-full max-w-[400px] h-[600px]'
+          />
         </div>
         <div>
           <h1 className='text-white text-3xl font-medium'>Download the App</h1>
@@ -258,17 +262,19 @@ const App = () => {
         </div>
       </div>
       {/* footer start */}
-      <div className='bg-[#000000] w-full h-auto flex flex-wrap gap-20 max-lg:bg-red-600'>
-        <div className='w-[20%]'>
+      <div className='bg-[#000000] w-full h-auto flex flex-wrap justify-between px-10 py-10'>
+        {/* first */}
+        <div className=''>
           <img
             src={Footer_logo}
             alt='footer_image_here'
             className='w-[160px] h-[56px]'
           />
         </div>
-        <div className='w-[20%]'>
-          <h1 className='text-white font-normal leading-4'>Join Us</h1>
-          <div className='bg-teal-400'>
+        {/* second */}
+        <div className='flex flex-col'>
+          <h1 className='text-white font-normal leading-4 pb-4'>Join Us</h1>
+          <div className='flex flex-col gap-4'>
             <li className='text-white list-none cursor-pointer'>Careers</li>
             <li className='text-white list-none cursor-pointer'>
               Lime Times Blog
@@ -276,30 +282,36 @@ const App = () => {
             <li className='text-white list-none cursor-pointer'>Press</li>
             <li className='text-white list-none cursor-pointer'>Partners</li>
           </div>
-          <div>
-            <li className='text-white list-none cursor-pointer'>Careers</li>
+        </div>
+        {/* third */}
+        <div className='flex flex-col'>
+          <h1 className='text-white font-normal leading-4 pb-4'>About</h1>
+          <div className='flex flex-col gap-4'>
+            <li className='text-white list-none cursor-pointer'>Community</li>
+            <li className='text-white list-none cursor-pointer'>E-Bike</li>
+            <li className='text-white list-none cursor-pointer'>E-Scooter</li>
             <li className='text-white list-none cursor-pointer'>
-              Lime Times Blog
+              Sustainability
             </li>
-            <li className='text-white list-none cursor-pointer'>Press</li>
-            <li className='text-white list-none cursor-pointer'>Partners</li>
+            <li className='text-white list-none cursor-pointer'>Innovation</li>
+            <li className='text-white list-none cursor-pointer'>Safety</li>
           </div>
-          <div>
-            <li className='text-white list-none cursor-pointer'>Careers</li>
-            <li className='text-white list-none cursor-pointer'>
-              Lime Times Blog
-            </li>
-            <li className='text-white list-none cursor-pointer'>Press</li>
-            <li className='text-white list-none cursor-pointer'>Partners</li>
-          </div>
-          <div>
-            <li className='text-white list-none cursor-pointer'>Careers</li>
-            <li className='text-white list-none cursor-pointer'>
-              Lime Times Blog
-            </li>
-            <li className='text-white list-none cursor-pointer'>Press</li>
-            <li className='text-white list-none cursor-pointer'>Partners</li>
-          </div>
+        </div>
+        {/* fourth */}
+        <div className='flex flex-col gap-4'>
+          <h1 className='text-white font-normal leading-4 pb-4'>Programs</h1>
+          <li className='text-white list-none cursor-pointer'>Advertise</li>
+          <li className='text-white list-none cursor-pointer'>Lime Access</li>
+          <li className='text-white list-none cursor-pointer'>Hero</li>
+          <li className='text-white list-none cursor-pointer'>Lime Assist</li>
+          <li className='text-white list-none cursor-pointer'>Insurance</li>
+          <li lassName='text-white list-none cursor-pointer'>Our Cities</li>
+        </div>
+        {/* fifth */}
+        <div className=' flex flex-col gap-4'>
+          <h1 className='text-white font-normal leading-4 pb-4'>About</h1>
+          <li className='text-white list-none cursor-pointer'>Get help</li>
+          <li className='text-white list-none cursor-pointer'>Sitemap</li>
         </div>
       </div>
     </div>
