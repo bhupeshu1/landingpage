@@ -13,6 +13,7 @@ import reviseImage from './common/images/recentimage.png';
 import locationImage from './common/images/locatonImage.png';
 import playImage from './common/images/play.png';
 import Footer_logo from './common/images/limeFooter.png';
+import ScrollButton from './components/ScrollButton';
 
 const App = () => {
   return (
@@ -312,7 +313,9 @@ const App = () => {
           <h1 className='text-white font-normal leading-4 pb-4'>About</h1>
           <li className='text-white list-none cursor-pointer'>Get help</li>
           <li className='text-white list-none cursor-pointer'>Sitemap</li>
+          <ScrollButton/>
         </div>
+      
       </div>
     </div>
   );
